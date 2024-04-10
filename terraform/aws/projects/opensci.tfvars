@@ -16,13 +16,17 @@ user_buckets = {
 
 hub_cloud_permissions = {
   "staging" : {
-    requestor_pays : true,
-    bucket_admin_access : ["scratch-staging"],
-    extra_iam_policy : ""
+    "user-sa" : {
+      requestor_pays : true,
+      bucket_admin_access : ["scratch-staging"],
+      extra_iam_policy : "",
+    },
   },
   "prod" : {
-    requestor_pays : true,
-    bucket_admin_access : ["scratch"],
-    extra_iam_policy : ""
+    "user-sa" : {
+      requestor_pays : true,
+      bucket_admin_access : ["scratch"],
+      extra_iam_policy : "",
+    },
   },
 }

@@ -14,7 +14,7 @@ cluster_nodes_location = "us-west-2a"
 #       to setup scratch buckets for the hubs on this cluster.
 #
 #user_buckets = {
-#  "scratch-" : {
+#  "scratch-staging" : {
 #    "delete_after" : 7
 #  },
 # Tip: add more scratch buckets below, if this cluster will be multi-tenant
@@ -24,9 +24,11 @@ cluster_nodes_location = "us-west-2a"
 #       to setup specific cloud permissions for the buckets in this cluster.
 #
 #hub_cloud_permissions = {
-#  "" : {
-#    bucket_admin_access : ["scratch-"],
-#    extra_iam_policy : ""
+#  "staging" : {
+#    "user-sa" : {
+#      bucket_admin_access : ["scratch-staging"],
+#      extra_iam_policy : "",
+#    },
 #  },
 # # Tip: add more namespaces below, if this cluster will be multi-tenant
 #}
