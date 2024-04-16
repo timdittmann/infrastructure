@@ -80,7 +80,7 @@ jupyterhub:
                 display_name: Jupyter SciPy Notebook
                 slug: scipy
                 kubespawner_override:
-                  image: quay.io/jupyter/scipy-notebook:2024-06-26
+                  image: quay.io/jupyter/scipy-notebook:2024-04-15
               school:
                 display_name: TOPST SCHOOL Project
                 description: "quay.io/repository/isciences/tops-school:latest"
