@@ -162,7 +162,7 @@ basehub:
                   display_name: Dacapo
                   slug: dacapo
                   kubespawner_override:
-                    image: "quay.io/2i2c/dacapo-image:42b606702986"
+                    image: "quay.io/2i2c/dacapo-image:f853de12b932"
         - display_name: "Community Images"
           default: true
           description: "Start a container with a community maintained image"
